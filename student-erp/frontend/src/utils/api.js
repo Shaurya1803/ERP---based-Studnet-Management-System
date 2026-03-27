@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api" });
+const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || "https://erp-based-studnet-management-system-1.onrender.com/api" });
 
 // Attach token to every request
 API.interceptors.request.use((config) => {
